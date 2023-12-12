@@ -1,0 +1,149 @@
+/* 
+
+-- 01 TYPOGRAPHY SYSTEM
+
+- FontSize (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weight: 
+Default: 400
+Medium: 500
+Smi-bold: 600
+Bold: 700
+
+- line-height:
+Default: 1
+Small 1.05
+medium 1.2
+Paragraph default 1.6
+
+
+SPACING SYSTEM (px)
+
+-- 01 COLORS
+
+-Primary: #345FF6
+-Tints: 
+#587DFF
+
+
+-Shades:
+#253347
+#d6e6fe
+
+
+-Accents:
+-Greys:
+
+#5E6E85
+#D8E2E7
+#FFFFFF
+#d6e6fecc
+
+
+
+-- 05 Shadows
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
+
+-- 06 BORDER-RADIUS
+
+-- 07 WHITESPACE
+
+- Spacing System (px
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 10px/ 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #253347;
+  overflow-x: hidden;
+}
+
+/**********************/
+/* GENERAL REUSABLE COMPONENTS */
+/**********************/
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.heading-primary {
+  font-size: 6.4rem;
+  font-weight: 600;
+  color: #253347;
+  margin-bottom: 3.6rem;
+  line-height: 1.2;
+}
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #253347;
+  text-transform: capitalize;
+  margin-bottom: 3.6rem;
+  line-height: 1.2;
+}
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  color: #253347;
+}
+.description {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #5e6e85;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/**********************/
+/* HELPER/SETTINGS CLASSES */
+/**********************/
+
+.margin-top-bg {
+  margin-top: 12.8rem !important;
+}
+.grid-limit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.margin-top-sm {
+  margin-top: 4.8rem !important;
+}
+strong {
+  font-size: 1.6rem;
+}
